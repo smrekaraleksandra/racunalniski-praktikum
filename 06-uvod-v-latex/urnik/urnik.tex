@@ -322,27 +322,36 @@ Naslednje vrstice bodo pojasnile, kako implementirati postopek požrešne metode
 Zgoraj predstavljena shema je le grob opis postopka, ki ga nad urnikom izvaja požrešna metoda,
 zato si je smiselno podrobneje ogledati posamezne korake.
 
-   Z zanko se sprehodimo po vektorju vseh predmetov. Predmet na ??-tem koraku
-   označimo s ??.
-
-   Naslednja vgnezdena zanka nas popelje po vseh predavalnicah. Predavalnico na
-   ??-tem koraku označimo s ??.
-
-   Za vse proste termine ?? izračunamo ceno vstavljanja
-   ??, ki ga sestavlja ??, profesor, ki ta predmet predava,
-   ter skupina, kateri je predmet namenjen.
-
-   Če je trenutna cena boljša od najboljše dosedanje, potem najboljša dosedanja
-   dobi vrednost trenutne. Hkrati si zapomnimo, za kateri termin smo izračunali ceno
-   vstavljanja, da bomo ?? na koncu vstavili v termin z najboljšo
-   ceno vstavljanja.
-
-   Ko preverimo vse proste termine vseh predavalnic, vstavimo ??
-   v termin z najboljšo ceno.
-
-   Sedaj se ponovno vrnemo na začetek in pogledamo najugodnejši termin za naslednji
-   predmet. Postopek ponavljamo, dokler se zunanja zanka, ki se sprehaja po vseh predmetih,
-   ne zaključi. S tem smo namreč v urnik vstavili vse predmete.
+  
+  \begin{enumerate}
+   \item 
+    Z zanko se sprehodimo po vektorju vseh predmetov. Predmet na $i$-tem koraku
+    označimo s ??.
+ 
+   \item 
+    Naslednja vgnezdena zanka nas popelje po vseh predavalnicah. Predavalnico na
+    ??-tem koraku označimo s ??.
+ 
+   \item 
+    Za vse proste termine ?? izračunamo ceno vstavljanja
+    ??, ki ga sestavlja ??, profesor, ki ta predmet predava,
+    ter skupina, kateri je predmet namenjen.
+ 
+   \item 
+    Če je trenutna cena boljša od najboljše dosedanje, potem najboljša dosedanja
+    dobi vrednost trenutne. Hkrati si zapomnimo, za kateri termin smo izračunali ceno
+    vstavljanja, da bomo ?? na koncu vstavili v termin z najboljšo
+    ceno vstavljanja.
+ 
+   \item 
+    Ko preverimo vse proste termine vseh predavalnic, vstavimo ??
+    v termin z najboljšo ceno.
+ 
+   \item 
+    Sedaj se ponovno vrnemo na začetek in pogledamo najugodnejši termin za naslednji
+    predmet. Postopek ponavljamo, dokler se zunanja zanka, ki se sprehaja po vseh predmetih,
+    ne zaključi. S tem smo namreč v urnik vstavili vse predmete.
+  \end{enumerate}
 
 \subsection{Optimizacijske metode }
 
